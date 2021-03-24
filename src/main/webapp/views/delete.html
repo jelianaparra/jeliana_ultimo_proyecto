@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link type="text/css" href="../css/material-icons.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../css/edit.css">
+</head>
+
+<body class="blue">
+    <div class="container-fluid" style="overflow: hidden;">
+        <nav>
+            <div class="nav-wrapper grey darken-4">
+                <a href="./../views/dashboard.html" class="brand-logo">
+                    <i class="material-icons">home</i> World
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a id="username" class="waves-effect waves-light btn light-blue darken-1"><i
+                                class="material-icons left">account_circle</i>user</a></li>
+                    <li><a id="out" onclick="out()" class="waves-effect waves-light btn red darken-3"> <i
+                                class="material-icons right">exit_to_app</i>Log out</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container grey darken-4" style="margin-top: 4%;margin-bottom: 4%;padding: 2% 2% 2% 10%;">
+            <form class="white-text">
+                <div class="row">
+                    <div class="input-field col s4">
+                        <input value="1" id="name" type="text">
+                        <label for="name" class="active">Nombre</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input value="1" id="lastName" type="text">
+                        <label for="lastName" class="active">Apellido</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s4">
+                        <input value="1" id="email" type="email" class="validate">
+                        <label for="email" class="active">Correo</label>
+                        <span class="helper-text" data-error="wrong" data-success="right" id="emailValid"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="password" type="password" oninput="check()" class="validate" minlength="6">
+                        <label for="password" class="active">Contraseña</label>
+                        <span class="helper-text" data-error="wrong" data-success="right" id="passwordValid"></span>
+                    </div>
+                </div>
+
+
+            </form>
+            <div class="col s12">
+                <div id="btn">
+                    <a onclick="eliminar()" class="white-text light-blue darken-1 btn">eliminar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/delete.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+input{
+    color:white;
+}
+[type="radio"].with-gap:checked+span:after {
+    background-color: white;
+}
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after {
+    border: 2px solid white;
+}
+.modal {
+    background-color:#212121 ;
+  }
+  .datepicker-date-display {
+    background-color:#C62828 ;
+  }
+  .datepicker-cancel, .datepicker-clear, .datepicker-today, .datepicker-done{
+    color: #C62828
+  }
+.datepicker-table td.is-today {
+  color: #C62828
+}
+.datepicker-table td.is-selected {
+  background-color: #424242;
+}
+input:not([type]):not([readonly]):focus, input[type=text]:not([readonly]):not(.browser-default):focus, 
+input[type=password]:not([readonly]):not(.browser-default):focus, input[type=email]:not([readonly]):not(.browser-default):focus{
+  border-bottom-color: #0080ff;
+  -webkit-box-shadow:0 1px 0 0 #0080ff;
+  box-shadow:0px 1px 0px 0px #0080ff;
+}
+input:not([type]):not([readonly]):focus + label, input[type=text]:not([readonly]):not(.browser-default):focus + label, 
+input[type=password]:not([readonly]):not(.browser-default):focus + label, input[type=email]:not([readonly]):not(.browser-default):focus + label{
+  color: #C62828;
+}
